@@ -84,17 +84,17 @@ function FloatingNavBar() {
             </a>
             <a
               className={`font-medium text-gray-500 hover:text-gray-400 md:py-6 ${
-                path === "/projects" && "text-red-900"
+                path === "/StarDeploy/projects" && "text-red-900"
               }`}
-              href="/projects"
+              href="/StarDeploy/projects"
             >
               Projects
             </a>
             <a
               className={`font-medium text-gray-500 hover:text-gray-400 md:py-6 ${
-                path === "/gallery" && "text-red-900"
+                path === "/StarDeploy/gallery" && "text-red-900"
               }`}
-              href="/gallery"
+              href="/StarDeploy/gallery"
             >
               Gallery
             </a>
