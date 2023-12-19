@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter basename={import.meta.env.DEV ? "/" : "/StarDeploy/"}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/StarDeploy/projects" element={<Projects />} />
-        <Route path="/StarDeploy/gallery" element={<GalleryPage />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/gallery" element={<GalleryPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
