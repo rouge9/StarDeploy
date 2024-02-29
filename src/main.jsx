@@ -10,15 +10,15 @@ import GalleryPage from "./routes/GalleryPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/StarDeploy/",
+    path: "/",
     element: <App />,
   },
   {
-    path: "/StarDeploy/projects",
+    path: "/projects",
     element: <Projects />,
   },
   {
-    path: "/StarDeploy/gallery",
+    path: "/gallery",
     element: <GalleryPage />,
   },
   {
