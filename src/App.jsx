@@ -20,7 +20,6 @@ function App() {
       {/* <NavBar /> */}
       {/* <FloatingNavBar /> */}
       {/* <Hero /> */}
-      {/*  */}
       <ShuffleHero />
       {/* <Divider /> */}
       <SimpleClients />
