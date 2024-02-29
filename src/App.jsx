@@ -1,20 +1,34 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./routes/Home";
-import Projects from "./routes/Projects";
-import GalleryPage from "./routes/GalleryPage";
-import ErrorPage from "./componets/ErrorPage";
+// import { Fragment } from "react";
+// import NavBar from "./componets/NavBar";
+// import Hero from "./componets/Hero";
+// import Divider from "./componets/Divider";
+// import Footer from "./componets/Footer";
+import ShuffleHero from "./componets/ShuffleHero";
+import Gallery from "./componets/Gallery";
+// import Features from "./componets/Features";
+// import SimpleFooter from "./componets/SimpleFooter";
+// import FloatingNavBar from "./componets/FloatingNavBar";
+import Clients from "./componets/Clients";
+import Layout from "./layout/Layout";
+import Services from "./componets/Services";
+// import SimpleGallery from "./componets/SimpleGallery";
+import SimpleClients from "./componets/SimpleClients";
 
 function App() {
-  console.log(import.meta.env.DEV);
   return (
-    <BrowserRouter basename={import.meta.env.DEV ? "/" : "/StarDeploy/"}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/gallery" element={<GalleryPage />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-    </BrowserRouter>
+    <Layout>
+      {/* <NavBar /> */}
+      {/* <FloatingNavBar /> */}
+      {/* <Hero /> */}
+      <ShuffleHero />
+      {/* <Divider /> */}
+      <SimpleClients />
+      <Clients />
+      {/* <Features /> */}
+      <Gallery />
+      {/* <SimpleGallery /> */}
+      <Services />
+    </Layout>
   );
 }
 
